@@ -1,0 +1,42 @@
+.nitor-button {
+  display: flex;
+  outline: none;
+  border: none;
+  padding: var(--global-baseline);
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  will-change: background-color;
+  transition: background-color var(--hover-transition);
+  > span {
+    font-size: calc(var(--global-baseline) * 2);
+    user-select: none;
+  }
+  &.primary {
+    background-color: var(--nitor-blue);
+    > span {
+      color: var(--white);
+    }
+    &:hover {
+      background-color: color(var(--nitor-blue) tint(15%));
+    }
+  }
+  &.secondary {
+    background-color: var(--nitor-blue-light);
+    > span {
+      color: color(var(--nitor-blue-light) blend(var(--white) 90%));
+    }
+    &:hover {
+      background-color: color(var(--nitor-blue-light) shade(15%));
+    }
+  }
+  &:disabled {
+    background-color: var(--light-gray);
+    cursor: not-allowed;
+    > span {
+      color: var(--dark-gray);
+    }
+    &:hover {
+      background-color: var(--light-gray);
+    }
+  }
+}

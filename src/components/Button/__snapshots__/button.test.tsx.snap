@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Should render correctly 1`] = `
+<button
+  className="nitor-button primary "
+  onClick={[Function]}
+  type="button"
+>
+  <span />
+</button>
+`;
+
+exports[`Button should render correctly 1`] = `
+<button
+  className="nitor-button primary "
+  onClick={[Function]}
+  type="button"
+>
+  <span />
+</button>
+`;

@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export enum Theme {
+export enum ButtonTheme {
   primary = 'primary',
   secondary = 'secondary',
   unset = ''
@@ -8,14 +8,14 @@ export enum Theme {
 
 interface IButtonPropTypes {
   onClick: () => void;
-  theme?: Theme;
+  theme?: ButtonTheme;
   disabled?: boolean;
   className?: string;
 }
 
 export default class Button extends React.PureComponent<IButtonPropTypes, {}> {
   static defaultProps = {
-    theme: Theme.primary
+    theme: ButtonTheme.primary
   };
 
   public render() {

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input Should be correctly disabled 1`] = `
+<input
+  className="flame-input "
+  disabled={true}
+/>
+`;
+
+exports[`Input Should be correctly enabled 1`] = `
+<input
+  className="flame-input "
+  disabled={false}
+/>
+`;
+
+exports[`Input Should render correctly 1`] = `
+<input
+  className="flame-input "
+/>
+`;

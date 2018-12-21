@@ -1,0 +1,17 @@
+.flame-input {
+  height: calc(var(--global-baseline) * 4);
+  padding-left: var(--global-baseline);
+  padding-right: var(--global-baseline);
+  border-radius: var(--border-radius);
+  border: 2px solid var(--light-gray);
+  &:focus {
+    outline: none;
+    border: 2px solid var(--nitor-blue-light);
+    box-shadow: 0 0 4px 0 var(--nitor-blue-light);
+  }
+  &:disabled {
+    background-color: var(--light-gray);
+    border: 2px solid var(--dark-gray);
+    cursor: not-allowed;
+  }
+}

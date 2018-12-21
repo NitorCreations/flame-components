@@ -2,7 +2,7 @@
 
 exports[`Button Should be correctly disabled 1`] = `
 <button
-  className="nitor-button primary "
+  className="flame-button primary "
   disabled={true}
   onClick={[Function]}
   type="button"
@@ -13,7 +13,7 @@ exports[`Button Should be correctly disabled 1`] = `
 
 exports[`Button Should be correctly enabled 1`] = `
 <button
-  className="nitor-button primary "
+  className="flame-button primary "
   disabled={false}
   onClick={[Function]}
   type="button"
@@ -24,7 +24,7 @@ exports[`Button Should be correctly enabled 1`] = `
 
 exports[`Button Should render correctly 1`] = `
 <button
-  className="nitor-button primary "
+  className="flame-button primary "
   onClick={[Function]}
   type="button"
 >

@@ -21,7 +21,7 @@ export default class Button extends React.PureComponent<IButtonPropTypes, {}> {
   public render() {
     const { onClick, theme, disabled, className } = this.props;
     return (
-      <button className={`nitor-button ${theme} ${className ? className : ''}`} type="button" onClick={onClick} disabled={disabled}>
+      <button className={`flame-button ${theme} ${className ? className : ''}`} type="button" onClick={onClick} disabled={disabled}>
           <span>
               {this.props.children}
           </span>

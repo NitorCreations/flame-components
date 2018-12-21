@@ -4,6 +4,11 @@
   padding-right: var(--global-baseline);
   border-radius: var(--border-radius);
   border: 2px solid var(--light-gray);
+  will-change: box-shadow;
+  transition: box-shadow var(--hover-transition);
+  &:hover {
+    box-shadow: 0 0 4px 0 var(--light-gray);
+  }
   &:focus {
     outline: none;
     border: 2px solid var(--nitor-blue-light);

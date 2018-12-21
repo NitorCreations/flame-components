@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextInput Should be correctly disabled 1`] = `
+<label
+  className="flame-checkbox  disabled"
+>
+  <input
+    checked={false}
+    disabled={true}
+    type="checkbox"
+  />
+  <span />
+</label>
+`;
+
+exports[`TextInput Should be correctly enabled 1`] = `
+<label
+  className="flame-checkbox  "
+>
+  <input
+    checked={false}
+    disabled={false}
+    type="checkbox"
+  />
+  <span />
+</label>
+`;
+
+exports[`TextInput Should render correctly 1`] = `
+<label
+  className="flame-checkbox  "
+>
+  <input
+    checked={false}
+    type="checkbox"
+  />
+  <span />
+</label>
+`;

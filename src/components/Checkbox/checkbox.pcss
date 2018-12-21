@@ -1,0 +1,18 @@
+.flame-checkbox {
+  display: flex;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  > input {
+    margin-right: calc(var(--global-baseline) * 2);
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+  &.disabled {
+    cursor: not-allowed;
+    > span {
+      color: var(--dark-gray);
+    }
+  }
+}

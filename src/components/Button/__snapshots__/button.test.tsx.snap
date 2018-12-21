@@ -1,8 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button Should render correctly 1`] = `
+exports[`Button Should be correctly disabled 1`] = `
 <button
   className="nitor-button primary "
+  disabled={true}
   onClick={[Function]}
   type="button"
 >
@@ -10,7 +11,18 @@ exports[`Button Should render correctly 1`] = `
 </button>
 `;
 
-exports[`Button should render correctly 1`] = `
+exports[`Button Should be correctly enabled 1`] = `
+<button
+  className="nitor-button primary "
+  disabled={false}
+  onClick={[Function]}
+  type="button"
+>
+  <span />
+</button>
+`;
+
+exports[`Button Should render correctly 1`] = `
 <button
   className="nitor-button primary "
   onClick={[Function]}

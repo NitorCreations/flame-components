@@ -1,22 +1,30 @@
 .flame-input {
-  height: calc(var(--global-baseline) * 4);
-  padding-left: var(--global-baseline);
-  padding-right: var(--global-baseline);
-  border-radius: var(--border-radius);
-  border: 2px solid var(--light-gray);
-  will-change: box-shadow;
-  transition: box-shadow var(--hover-transition);
-  &:hover {
-    box-shadow: 0 0 4px 0 var(--light-gray);
+  display: inline-flex;
+  flex-direction: column;
+  input {
+    height: calc(var(--global-baseline) * 4);
+    padding-left: var(--global-baseline);
+    padding-right: var(--global-baseline);
+    border-radius: var(--border-radius);
+    border: 2px solid var(--light-gray);
+    will-change: box-shadow;
+    transition: box-shadow var(--hover-transition);
+    &:hover {
+      box-shadow: 0 0 4px 0 var(--light-gray);
+    }
+    &:focus {
+      outline: none;
+      border: 2px solid var(--nitor-blue-light);
+      box-shadow: 0 0 4px 0 var(--nitor-blue-light);
+    }
+    &:disabled {
+      background-color: var(--light-gray);
+      border: 2px solid var(--dark-gray);
+      cursor: not-allowed;
+    }
   }
-  &:focus {
-    outline: none;
-    border: 2px solid var(--nitor-blue-light);
-    box-shadow: 0 0 4px 0 var(--nitor-blue-light);
-  }
-  &:disabled {
-    background-color: var(--light-gray);
-    border: 2px solid var(--dark-gray);
-    cursor: not-allowed;
+  .flame-input-label {
+    font-size: 0.87rem;
+    margin-bottom: var(--global-baseline);
   }
 }

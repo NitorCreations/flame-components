@@ -20,4 +20,10 @@ describe('TextInput', () => {
 
     expect(component).toMatchSnapshot();
   });
+
+  it('Should render label', () => {
+    const component = shallow(<TextInput label="label" />);
+
+    expect(component).toMatchSnapshot();
+  });
 });

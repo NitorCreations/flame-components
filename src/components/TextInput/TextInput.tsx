@@ -2,6 +2,7 @@ import * as React from 'react';
 
 interface IInputProps {
   placeholder?: string;
+  label?: string;
   onChange?: () => void;
   type?: string;
   disabled?: boolean;
@@ -14,16 +15,24 @@ export default class TextInput extends React.PureComponent<IInputProps, {}> {
   };
 
   public render() {
-    const { onChange, placeholder, type, className, disabled } = this.props;
+    const { onChange, placeholder, label, type, className, disabled } = this.props;
+
+    const labelBlock = label ? (
+      <span className="flame-input-label">
+          {label}
+        </span>
+    ) : null;
 
     return (
-      <input
-        type={type}
-        className={`flame-input ${className ? className : ''}`}
-        placeholder={placeholder}
-        disabled={disabled}
-        onChange={onChange}
-      />
+      <div className={`flame-input ${className ? className : ''}`}>
+        {labelBlock}
+        <input
+          type={type}
+          placeholder={placeholder}
+          disabled={disabled}
+          onChange={onChange}
+        />
+      </div>
     );
   }
 }

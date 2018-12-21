@@ -7,6 +7,10 @@ storiesOf('TextInput', module)
       <TextInput placeholder="Text input" />
     )
   )
+  .add('With label', () => (
+      <TextInput placeholder="With label" label="Label" />
+    )
+  )
   .add('Disabled', () => (
       <TextInput placeholder="Disabled input" disabled />
     )
